@@ -6,11 +6,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Edamam Recipe Search API
+## Edamam Recipe Search API
 
 Application ID (This is the application ID, you should send with each API request.):
 b8c6776c
 
 Application Keys (These are application keys used to authenticate requests.):
 
-fc6fbceec18eafa23451550013c3ee55	—
+fc6fbceec18eafa23451550013c3ee55	
+
+## Azure AI Bot
+
+Azure Key 1 : ```fe365987f1664f99b4f4ceba55300d35```
+Azure Speech : ```https://pantrypalaires7548100829.cognitiveservices.azure.com/```
