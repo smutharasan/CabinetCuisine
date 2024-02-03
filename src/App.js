@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact"; // Import your new component
 import Search from "./components/Search"; // Import your new component
 import Dashboard from "./components/Dashboard";
@@ -9,7 +9,7 @@ function App() {
   const value = "World";
   return (
     <Router>
-      <Switch>
+      <Routes>
         {/* Define your routes here */}
         <Route path="/contact" component={Contact} />
         <Route path="/search" component={Search} />
@@ -21,7 +21,7 @@ function App() {
           <div>Hello {value}</div>
           <Dashboard />
         </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }
