@@ -8,8 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Edamam Recipe Search API
 
-Application ID (This is the application ID, you should send with each API request.)
+Application ID (This is the application ID, you should send with each API request.):
 b8c6776c
 
-Application Keys (These are application keys used to authenticate requests.)
+Application Keys (These are application keys used to authenticate requests.):
+
 fc6fbceec18eafa23451550013c3ee55	—
