@@ -610,7 +610,7 @@ video {
     width: 150px; 
     height: auto; 
   }
- CSS to style the food categories */
+ /*CSS to style the food categories */
 .food-categories {
   display: flex;
   justify-content: center;
