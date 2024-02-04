@@ -24,7 +24,7 @@ const About = () => (
       />
 
       <TeamMember
-        name="Zara Farukh"
+        name="Zara Farrukh"
         role="Second-year Computer Science Student"
         bio="Zara Farukh is a passionate second-year computer science student with a keen interest in web development. Her curiosity about cutting-edge technologies and commitment to excellence make her a valuable member of our team. Zara specializes in front-end development using React JS, creating seamless and interactive user interfaces."
       />
