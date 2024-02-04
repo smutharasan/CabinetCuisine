@@ -1,9 +1,9 @@
 # Pantry Pal
 ![Pantry Pal](https://raw.githubusercontent.com/smutharasan/PantryPal/main/public/logo.ico)
 
-Cloud web app that takes in a list of ingredients and generates a list of delicious recipe using AI. Assists you through the cooking process to make sure your meal never gets burnt again.
-
 ## Overview 
+
+Cloud web app that takes in a list of ingredients and generates a list of delicious recipe using AI. Assists you through the cooking process to make sure your meal never gets burnt again.
 
 ## Important Links: 
 [Pantry Pal Public URL](https://victorious-forest-0287dbc10.4.azurestaticapps.net)
