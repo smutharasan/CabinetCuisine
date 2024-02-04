@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
-
+import Footer from "./Footer";
+import Search from "./Search";
+import GoogleFontLoader from "react-google-font-loader";
+import { Link } from "react-router-dom";
 const Recipe = () => {
   const [details, setDetails] = useState({});
   const [activeTab, setActiveTab] = useState("instructions");
@@ -28,40 +31,89 @@ const Recipe = () => {
   }, [params.id, REACT_APP_FOOD_API_KEY]);
 
   return (
-    <Wrapper>
-      <div>
-        <h2>{details.title}</h2>
-        <img src={details.image} alt={details.title} />
+    <div className="flex-col">
+      <GoogleFontLoader
+        fonts={[
+          {
+            font: "Futura",
+            weights: [400, 700],
+          },
+        ]}
+      />
+      <div className="logo-container">
+        <img
+          src="https://github.com/smutharasan/PantryPal/blob/main/src/PantryPal.png?raw=true"
+          alt="Logo"
+          className="logo"
+        />
       </div>
-      <Info>
-        <Button
-          className={activeTab === "ingredients" ? "active" : ""}
-          onClick={() => setActiveTab("ingredients")}
-        >
-          Ingredients
-        </Button>
-        <Button
-          className={activeTab === "instructions" ? "active" : ""}
-          onClick={() => setActiveTab("instructions")}
-        >
-          Instructions
-        </Button>
-        {activeTab === "ingredients" && (
-          <ul>
-            {details.extendedIngredients.map(({ id, original }) => (
-              <li key={id}>{original}</li>
-            ))}
-          </ul>
-        )}
+      <Search></Search>
 
-        {activeTab === "instructions" && (
-          <div>
-            <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>
-            <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>
-          </div>
-        )}
-      </Info>
-    </Wrapper>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li>
+            <Link class="menu__item" to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link class="menu__item" to="/about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link class="menu__item" to="/recipes">
+              Recipes
+            </Link>
+          </li>
+          <li>
+            <Link class="menu__item" to="/contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <Wrapper>
+        <div>
+          <h2>{details.title}</h2>
+          <img src={details.image} alt={details.title} />
+        </div>
+        <Info>
+          <Button
+            className={activeTab === "ingredients" ? "active" : ""}
+            onClick={() => setActiveTab("ingredients")}
+          >
+            Ingredients
+          </Button>
+          <Button
+            className={activeTab === "instructions" ? "active" : ""}
+            onClick={() => setActiveTab("instructions")}
+          >
+            Instructions
+          </Button>
+          {activeTab === "ingredients" && (
+            <ul>
+              {details.extendedIngredients.map(({ id, original }) => (
+                <li key={id}>{original}</li>
+              ))}
+            </ul>
+          )}
+
+          {activeTab === "instructions" && (
+            <div>
+              <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>
+              <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>
+            </div>
+          )}
+        </Info>
+      </Wrapper>
+      <Footer />
+    </div>
   );
 };
 

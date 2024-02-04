@@ -24,7 +24,7 @@ const Dashboard = () => {
       cookingTime: 10,
       imageUrl:
         "https://plus.unsplash.com/premium_photo-1691054888116-934e75064fb1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        path: "/recipe/ScrambledEggsRecipe", //path to recipe
+      path: "/recipe/ScrambledEggsRecipe", //path to recipe
     },
 
     {
@@ -145,7 +145,7 @@ const Dashboard = () => {
       />
       <div className="logo-container">
         <img
-          src="https://github.com/smutharasan/PantryPal/blob/main/src/Untitled_Artwork.png?raw=true"
+          src="https://github.com/smutharasan/PantryPal/blob/main/src/PantryPal.png?raw=true"
           alt="Logo"
           className="logo"
         />
@@ -200,15 +200,15 @@ const Dashboard = () => {
         </ul>
       </div>
 
-       {/*dashboard content links */}
-       <section className="recipe-list">
+      {/*dashboard content links */}
+      <section className="recipe-list">
         {recipe.map((recipe, index) => (
           <Link key={index} to={recipe.path} className="recipe-link">
             <RecipeCard {...recipe} />
           </Link>
         ))}
       </section>
-      
+
       <Footer />
     </div>
   );
