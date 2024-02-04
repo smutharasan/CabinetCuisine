@@ -37,7 +37,19 @@ const Dashboard = () => {
     },
   ];
 
-  const foodCategories = ['Italian', 'Mexican', 'Asian', 'Desserts'];
+  
+  const foodCategories = [
+    { name: 'Italian', icon: '🍝', link: '#' },
+    { name: 'Mexican', icon: '🌮', link: '#' },
+    { name: 'Asian', icon: '🍣', link: '#' },
+    { name: 'Desserts', icon: '🍰', link: '#' },
+    {name: 'Burgers', icon: '🍔', link: '#' },
+    { name: 'Pizza', icon: '🍕', link: '#' },
+    { name: 'Salads', icon: '🥗', link: '#' },
+    { name: 'Smoothies', icon: '🍹', link: '#' },
+    { name: 'BBQ', icon: '🍖', link: '#' },
+    { name: 'Seafood', icon: '🦞', link: '#'}
+  ];
 
   return (
     <div className="dashboard">
@@ -48,7 +60,8 @@ const Dashboard = () => {
   <div className="food-categories">
           {foodCategories.map((category, index) => (
             <div key={index} className="category">
-              {category}
+              <span className="category-icon">{category.icon}</span>
+              {category.name}
             </div>
           ))}
         </div>
@@ -65,9 +78,6 @@ const Dashboard = () => {
       <li><a class="menu__item" href="#">Contact</a></li>
     </ul>
   </div>
-      <header className="header">
-        {/* Add navigation or other header components */}
-      </header>
       <section className="recipe-list">
         {recipe.map((recipe, index) => (
           <RecipeCard key={index} {...recipe} />
