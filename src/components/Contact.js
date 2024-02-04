@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       <h1>Contact Page</h1>
-      Names: Zara Farrukh
+      Devs: Zara Farrukh
             Supriya Mutharasan
             Rosie Khurmi
             Rabia Chattha
