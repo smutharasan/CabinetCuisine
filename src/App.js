@@ -11,7 +11,6 @@ function App() {
   return (
     <Routes>
       {/* Define your routes here */}
-      //<Route path="/contact" element={<Contact />} />
       <Route path="/searched/:search" element={<Searched />} />
       <Route path="/about" element={<About />} />
       <Route path="/chat" element={<ChatWidget />} />
