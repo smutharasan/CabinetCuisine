@@ -5,14 +5,15 @@ import Contact from "./components/Contact"; // Import your new component
 import Search from "./components/Search"; // Import your new component
 import Dashboard from "./components/Dashboard";
 import ScrambledEggsRecipe from "./components/ScrambledEggsRecipe";
-
+import ChatWidget from "./components/ChatWidget";
 function App() {
   return (
     <Routes>
       {/* Define your routes here */}
-      <Route path="/contact" element={<Contact/>} />
-      <Route path="/search" element={<Search/>} />
-      <Route path="/recipe/abc" element={<ScrambledEggsRecipe/>} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/search" element={<Search />} />
+      <Route path="/chat" element={<ChatWidget />} />
+      <Route path="/recipe/abc" element={<ScrambledEggsRecipe />} />
       {/* Add more routes as needed */}
 
       {/* Default route */}
