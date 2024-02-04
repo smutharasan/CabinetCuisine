@@ -30,7 +30,7 @@ const About = () => (
       <TeamMember
         name="Zara Farrukh"
         role="Second-year Computer Science Student"
-        bio="Zara Farukh is a passionate second-year computer science student with a keen interest in web development. Her curiosity about cutting-edge technologies and commitment to excellence make her a valuable member of our team. Zara specializes in front-end development using React JS, creating seamless and interactive user interfaces."
+        bio="Zara Farrukh is a passionate second-year computer science student with a keen interest in web development. Her curiosity about cutting-edge technologies and commitment to excellence make her a valuable member of our team. Zara specializes in front-end development using React JS, creating seamless and interactive user interfaces."
       />
 
       <TeamMember
@@ -44,6 +44,11 @@ const About = () => (
         role="Fourth-year Computer Science Student"
         bio="As a seasoned fourth-year student, Supriya provides mentorship and expertise, taking a leadership role in guiding projects to successful completion using React JS and full-stack development."
       />
+      <TeamMember
+        name="Nimra Rehman"
+        role="Second-year Computer Science Student"
+        bio="An enthusiastic second-year computer science student, holds a deep fascination for web development. Her dedication positions her as a valuable team member."
+      />   
     </div>
     <Footer />
   </div>
