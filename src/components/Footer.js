@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -7,10 +8,11 @@ const Footer = () => {
         <p>Contact us: PantryPal@business.com | Call +1(234) 567 8901</p>
       </div>
       <div className="socials">
-        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <Link to="/twitter" target="_blank" rel="noopener noreferrer">Twitter</Link>
+        <Link to="/instagram" target="_blank" rel="noopener noreferrer">Instagram</Link>
       </div>
     </footer>
   );
 };
+
 export default Footer;
