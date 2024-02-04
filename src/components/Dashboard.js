@@ -1,14 +1,16 @@
 import React from 'react';
+import GoogleFontLoader from 'react-google-font-loader';
 import '../index.css';
 import Footer from './Footer'
 import { Link } from 'react-router-dom';
+
 //Create categories and searchbar, 
 // Separate RecipeCard component
 const RecipeCard = ({ name, cuisine, cookingTime, imageUrl }) => (
   <div className="recipe-card">
     <img src={imageUrl} alt={name} />
-    <div className="recipe-details">
-      <h3>{name}</h3>
+    <div className="recipe-details"> 
+    <h3 style={{ fontFamily: 'Futura, sans-serif' }}>{name}</h3>
       <p>Cuisine: {cuisine}</p>
       <p>Cooking Time: {cookingTime} mins</p>
     </div>
@@ -122,6 +124,14 @@ const foodCategoriesLine2 = [
 
   return (
     <div className="dashboard">
+      <GoogleFontLoader
+        fonts={[
+          {
+            font: 'Futura',
+            weights: [400, 700],
+          },
+        ]}
+      />
       <div className="logo-container">
     <img src="https://github.com/smutharasan/PantryPal/blob/main/src/Untitled_Artwork.png?raw=true" alt="Logo" className="logo" />
   </div>
