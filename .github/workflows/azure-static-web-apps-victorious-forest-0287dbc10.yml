@@ -27,6 +27,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           REACT_APP_CHATGPT_SECRET_KEY: ${{ secrets.CHATGPTKEY }}
           TEST: $ {{ secrets.TEST }}
+          REACT_APP_FOOD_API_KEY : $ {{secrets.REACT_APP_FOOD_API_KEY }}
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
