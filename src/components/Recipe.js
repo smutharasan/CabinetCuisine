@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
+import ChatWidget from "./ChatWidget";
 
 const Recipe = () => {
   const [details, setDetails] = useState({});
@@ -20,9 +21,22 @@ const Recipe = () => {
   useEffect(() => {
     let isMounted = true;
 
-    fetchDetails().then((data) => {
-      if (isMounted) setDetails(data);
-    });
+    const fetchBusinesses = () => {
+      return fetch(
+        `https://api.spoonacular.com/recipes/${params.id}/information?apiKey=${REACT_APP_FOOD_API_KEY}`,
+        { method: "GET" }
+      )
+        .then((res) => {
+          if (isMounted) setDetails(res.json());
+          return res.json();
+        })
+        .catch((err) => {
+          // some error handling
+          console.log(err);
+        });
+    };
+
+    fetchBusinesses();
     return () => {
       isMounted = false;
     };
@@ -62,6 +76,7 @@ const Recipe = () => {
           </div>
         )}
       </Info>
+      <ChatWidget></ChatWidget>
     </Wrapper>
   );
 };
