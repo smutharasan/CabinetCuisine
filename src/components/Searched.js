@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 
-const REACT_APP_FOOD_API_KEY = process.env.FOOD_API_KEY;
+const REACT_APP_FOOD_API_KEY = process.env.REACT_APP_FOOD_API_KEY;
 
 const Searched = () => {
+  console.log("The environment key is : ", REACT_APP_FOOD_API_KEY) 
   const [searchedRecipes, setSearchedRecipes] = useState([]);
   const parmas = useParams();
 
@@ -28,7 +29,7 @@ const Searched = () => {
     };
   }, [parmas.search]);
 
-  console.log("The environment key is : ", REACT_APP_FOOD_API_KEY) 
+  
   return (
     <Grid>
       {searchedRecipes.map(({ title, id, image }) => (
