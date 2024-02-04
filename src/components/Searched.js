@@ -28,7 +28,7 @@ const Searched = () => {
     };
   }, [parmas.search]);
 
-  console.log("The environment key is : ", REACT_APP_FOOD_API_KEY") 
+  console.log("The environment key is : ", REACT_APP_FOOD_API_KEY) 
   return (
     <Grid>
       {searchedRecipes.map(({ title, id, image }) => (
