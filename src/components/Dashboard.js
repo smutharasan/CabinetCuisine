@@ -4,8 +4,6 @@ import '../index.css';
 import Footer from './Footer'
 import { Link } from 'react-router-dom';
 
-//Create categories and searchbar, 
-// Separate RecipeCard component
 const RecipeCard = ({ name, cuisine, cookingTime, imageUrl }) => (
   <div className="recipe-card">
     <img src={imageUrl} alt={name} />
@@ -135,7 +133,16 @@ const foodCategoriesLine2 = [
       <div className="logo-container">
     <img src="https://github.com/smutharasan/PantryPal/blob/main/src/Untitled_Artwork.png?raw=true" alt="Logo" className="logo" />
   </div>
-  <div className='header'></div>
+  <div className='header'>{/* Search Bar */}
+       <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Pantry-powered recipes..."
+          className="search-input"
+        />
+        <button className="search-button">Search</button>
+      </div></div>
+  
   <div className="food-categories">
   {foodCategories.map((category, index) => (
     <Link key={index} to={category.link} className="category">
