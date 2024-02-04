@@ -44,12 +44,16 @@ const Dashboard = () => {
     { name: 'Asian', icon: '🍣', link: '#' },
     { name: 'Desserts', icon: '🍰', link: '#' },
     {name: 'Burgers', icon: '🍔', link: '#' },
-    { name: 'Pizza', icon: '🍕', link: '#' },
-    { name: 'Salads', icon: '🥗', link: '#' },
-    { name: 'Smoothies', icon: '🍹', link: '#' },
-    { name: 'BBQ', icon: '🍖', link: '#' },
-    { name: 'Seafood', icon: '🦞', link: '#'}
   ];
+
+  // Second line
+const foodCategoriesLine2 = [
+  { name: 'Pizza', icon: '🍕', link: '#' },
+  { name: 'Salads', icon: '🥗', link: '#' },
+  { name: 'Smoothies', icon: '🍹', link: '#' },
+  { name: 'BBQ', icon: '🍖', link: '#' },
+  { name: 'Seafood', icon: '🦞', link: '#' },
+];
 
   return (
     <div className="dashboard">
@@ -65,6 +69,15 @@ const Dashboard = () => {
             </div>
           ))}
         </div>
+
+   {/* Food Categories - Line 2 */}
+   <div className="food-categories">
+        {foodCategoriesLine2.map((category, index) => (
+          <a key={index} className="category" href={category.link}>
+            {category.icon} {category.name}
+          </a>
+        ))}
+      </div>
       <div class="hamburger-menu">
     <input id="menu__toggle" type="checkbox" />
     <label class="menu__btn" for="menu__toggle">
