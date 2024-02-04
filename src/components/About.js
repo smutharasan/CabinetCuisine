@@ -44,6 +44,11 @@ const About = () => (
         role="Fourth-year Computer Science Student"
         bio="As a seasoned fourth-year student, Supriya provides mentorship and expertise, taking a leadership role in guiding projects to successful completion using React JS and full-stack development."
       />
+      <TeamMember
+        name="Nimra Rehman"
+        role="Second-year Computer Science Student"
+        bio="An enthusiastic second-year computer science student, holds a deep fascination for web development. Her dedication positions her as a valuable team member."
+      />   
     </div>
     <Footer />
   </div>
