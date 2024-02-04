@@ -9,14 +9,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Edamam Recipe Search API
 
 Application ID (This is the application ID, you should send with each API request.):
-b8c6776c
+1f32a88c
 
 Application Keys (These are application keys used to authenticate requests.):
 
 fc6fbceec18eafa23451550013c3ee55
 
 ## Spoonacular API
-API key: 19b07d9346ed47e19b764c2309553fe5
+API key: 
+2d345e00d9c7b1676d54eade203ac539
 
 Put your API key in the request URL of every request you make in the format &apiKey=YOUR-API-KEY.
 Now you can use endpoints following the [documentation](https://spoonacular.com/food-api/docs).
