@@ -14,7 +14,7 @@ function App() {
       <Route path="/searched/:search" element={<Searched />} />
       <Route path="/about" element={<About />} />
       <Route path="/chat" element={<ChatWidget />} />
-      <Route path="/recipe/abc" element={<ScrambledEggsRecipe />} />
+      <Route path="/recipe/ScrambledEggsRecipe" element={<ScrambledEggsRecipe />} />
       {/* Add more routes as needed */}
 
       {/* Default route */}
