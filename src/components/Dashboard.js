@@ -2,7 +2,7 @@ import React from 'react';
 import '../index.css';
 //Create categories and searchbar, 
 // Separate RecipeCard component
-const RecipeCard = ({ name, cuisine, rating, cookingTime, imageUrl }) => (
+const RecipeCard = ({ name, cuisine, cookingTime, imageUrl }) => (
   <div className="recipe-card">
     <img src={imageUrl} alt={name} />
     <div className="recipe-details">
@@ -61,6 +61,7 @@ const foodCategoriesLine2 = [
         Welcome to
     <img src="https://github.com/smutharasan/PantryPal/blob/main/src/Untitled_Artwork.png?raw=true" alt="Logo" className="logo" />
   </div>
+  <div className='header'></div>
   <div className="food-categories">
           {foodCategories.map((category, index) => (
             <div key={index} className="category">
