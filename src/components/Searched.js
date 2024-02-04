@@ -2,13 +2,15 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 
+const REACT_APP_FOOD_API_KEY = process.env.FOOD_API_KEY;
+
 const Searched = () => {
   const [searchedRecipes, setSearchedRecipes] = useState([]);
   const parmas = useParams();
 
   const getSearchedRecipes = async (search) => {
     const resp = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.FOOD_API_KEY}&query=${search}`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${REACT_APP_FOOD_API_KEY}&query=${search}`
     );
     const data = await resp.json();
 
