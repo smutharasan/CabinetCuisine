@@ -2,7 +2,7 @@ import React from 'react';
 import '../index.css';
 //Create categories and searchbar, 
 // Separate RecipeCard component
-const RecipeCard = ({ name, cuisine, rating, cookingTime, imageUrl }) => (
+const RecipeCard = ({ name, cuisine, cookingTime, imageUrl }) => (
   <div className="recipe-card">
     <img src={imageUrl} alt={name} />
     <div className="recipe-details">
@@ -44,12 +44,16 @@ const Dashboard = () => {
     { name: 'Asian', icon: '🍣', link: '#' },
     { name: 'Desserts', icon: '🍰', link: '#' },
     {name: 'Burgers', icon: '🍔', link: '#' },
-    { name: 'Pizza', icon: '🍕', link: '#' },
-    { name: 'Salads', icon: '🥗', link: '#' },
-    { name: 'Smoothies', icon: '🍹', link: '#' },
-    { name: 'BBQ', icon: '🍖', link: '#' },
-    { name: 'Seafood', icon: '🦞', link: '#'}
   ];
+
+  // Second line
+const foodCategoriesLine2 = [
+  { name: 'Pizza', icon: '🍕', link: '#' },
+  { name: 'Salads', icon: '🥗', link: '#' },
+  { name: 'Smoothies', icon: '🍹', link: '#' },
+  { name: 'BBQ', icon: '🍖', link: '#' },
+  { name: 'Seafood', icon: '🦞', link: '#' },
+];
 
   return (
     <div className="dashboard">
@@ -57,6 +61,7 @@ const Dashboard = () => {
         Welcome to
     <img src="https://github.com/smutharasan/PantryPal/blob/main/src/Untitled_Artwork.png?raw=true" alt="Logo" className="logo" />
   </div>
+  <div className='header'></div>
   <div className="food-categories">
           {foodCategories.map((category, index) => (
             <div key={index} className="category">
@@ -65,6 +70,15 @@ const Dashboard = () => {
             </div>
           ))}
         </div>
+
+   {/* Food Categories - Line 2 */}
+   <div className="food-categories">
+        {foodCategoriesLine2.map((category, index) => (
+          <a key={index} className="category" href={category.link}>
+            {category.icon} {category.name}
+          </a>
+        ))}
+      </div>
       <div class="hamburger-menu">
     <input id="menu__toggle" type="checkbox" />
     <label class="menu__btn" for="menu__toggle">
