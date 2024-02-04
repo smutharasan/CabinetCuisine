@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Configuration, OpenAIApi } from "azure-openai";
+// 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
 
 const openai = new OpenAIApi(
   new Configuration({
     azure: {
-      apiKey: "", //Your API key goes here
-      endpoint: "", //Your endpoint goes here. It is like: "https://endpointname.openai.azure.com/"
+      apiKey: "fe365987f1664f99b4f4ceba55300d35", //Your API key goes here
+      endpoint: "https://pantrypalaires7548100829.openai.azure.com/", //Your endpoint goes here. It is like: "https://endpointname.openai.azure.com/"
       deploymentName: "", //Your deployment name goes here. It is like "chatgpt"
     },
   })
