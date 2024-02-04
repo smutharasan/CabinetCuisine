@@ -27,6 +27,8 @@ const Searched = () => {
       isMounted = false;
     };
   }, [parmas.search]);
+
+  console.log("The environment key is : ", REACT_APP_FOOD_API_KEY") 
   return (
     <Grid>
       {searchedRecipes.map(({ title, id, image }) => (
