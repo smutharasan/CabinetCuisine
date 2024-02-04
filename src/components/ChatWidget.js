@@ -11,6 +11,7 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 
 const REACT_APP_CHATGPT_SECRET_KEY = process.env.REACT_APP_CHATGPT_SECRET_KEY;
+const TEST = process.env.TEST;
 
 
 const ChatWidget = () => {
@@ -75,7 +76,7 @@ const ChatWidget = () => {
 
     return response.json();
   }
-
+  console.log("THIS SI THE TEST environment value : ", TEST)
   return (
     <div className="App">
       <div style={{ position: "relative", height: "800px", width: "700px" }}>
