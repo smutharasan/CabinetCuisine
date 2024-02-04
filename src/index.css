@@ -497,8 +497,9 @@ video {
   .header {
     background-color: rgb(250, 171, 110);
     color: #000000;
-    padding: 10px;
+    padding: 7px;
     text-align: center;
+    border-radius: 10px;
   }
   
   .recipe-list {
@@ -636,7 +637,27 @@ video {
   background-color: #fc4e34; /* different background color on hover */
   color: #000
 }
+/* Search Bar Styles */
+.search-bar {
+  margin-top: 6px;
+  display: flex;
+  border-radius: 10px;
+}
 
+.search-input {
+  flex: 1;
+  padding: 10px;
+}
+
+.search-button {
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #ff7b00;
+  border: none;
+  border-radius: 7px;
+}
 
 /* Footer styles */
 .footer {
