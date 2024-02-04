@@ -4,6 +4,7 @@ import '../index.css';
 import Footer from './Footer'
 import { Link } from 'react-router-dom';
 
+
 const RecipeCard = ({ name, cuisine, cookingTime, imageUrl }) => (
   <div className="recipe-card">
     <img src={imageUrl} alt={name} />
@@ -170,7 +171,6 @@ const foodCategoriesLine2 = [
 
   <ul class="menu__box">
     <li><Link class="menu__item" to="/">Home</Link></li>
-    <li><Link class="menu__item" to="/about">About</Link></li>
     <li><Link class="menu__item" to="/recipes">Recipes</Link></li>
     <li><Link class="menu__item" to="/contact">Contact</Link></li>
   </ul>
