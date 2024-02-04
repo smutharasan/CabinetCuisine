@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import Footer from './Footer'
+import { Link } from 'react-router-dom';
 //Create categories and searchbar, 
 // Separate RecipeCard component
 const RecipeCard = ({ name, cuisine, cookingTime, imageUrl }) => (
@@ -126,35 +127,38 @@ const foodCategoriesLine2 = [
   </div>
   <div className='header'></div>
   <div className="food-categories">
-          {foodCategories.map((category, index) => (
-            <div key={index} className="category">
-              <span className="category-icon">{category.icon}</span>
-              {category.name}
-            </div>
-          ))}
-        </div>
+  {foodCategories.map((category, index) => (
+    <Link key={index} to={category.link} className="category">
+      <span className="category-icon">{category.icon}</span>
+      {category.name}
+    </Link>
+  ))}
+</div>
+
 
    {/* Food Categories - Line 2 */}
    <div className="food-categories">
-        {foodCategoriesLine2.map((category, index) => (
-          <a key={index} className="category" href={category.link}>
-            {category.icon} {category.name}
-          </a>
-        ))}
-      </div>
-      <div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
+  {foodCategoriesLine2.map((category, index) => (
+    <Link key={index} to={category.link} className="category">
+      {category.icon} {category.name}
+    </Link>
+  ))}
+</div>
 
-    <ul class="menu__box">
-      <li><a class="menu__item" href="#">Home</a></li>
-      <li><a class="menu__item" href="#">About</a></li>
-      <li><a class="menu__item" href="#">Recipes</a></li>
-      <li><a class="menu__item" href="#">Contact</a></li>
-    </ul>
-  </div>
+<div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+
+  <ul class="menu__box">
+    <li><Link class="menu__item" to="/">Home</Link></li>
+    <li><Link class="menu__item" to="/about">About</Link></li>
+    <li><Link class="menu__item" to="/recipes">Recipes</Link></li>
+    <li><Link class="menu__item" to="/contact">Contact</Link></li>
+  </ul>
+</div>
+
       <section className="recipe-list">
         {recipe.map((recipe, index) => (
           <RecipeCard key={index} {...recipe} />
