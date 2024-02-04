@@ -11,13 +11,9 @@ function App() {
   return (
     <Routes>
       {/* Define your routes here */}
-<<<<<<< HEAD
       <Route path="/contact" element={<Contact />} />
       <Route path="/searched/:search" element={<Searched />} />
-=======
       <Route path="/about" element={<About />} />
-      <Route path="/search" element={<Search />} />
->>>>>>> c2343bbb9100dfb24602b6da15475d6cac95d748
       <Route path="/chat" element={<ChatWidget />} />
       <Route path="/recipe/abc" element={<ScrambledEggsRecipe />} />
       {/* Add more routes as needed */}
