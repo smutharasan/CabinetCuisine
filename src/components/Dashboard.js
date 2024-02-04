@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import Link from "react-router-dom";
+import { Link } from 'react-router-dom';
 //Create categories and searchbar,
 // Separate RecipeCard component
 const RecipeCard = ({ name, cuisine, cookingTime, imageUrl }) => (
