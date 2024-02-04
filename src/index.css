@@ -48,6 +48,7 @@ html,
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
+  font-family: 'Futura', sans-serif;
 }
 
 /*
@@ -524,6 +525,8 @@ video {
   
   .recipe-details {
     padding: 10px;
+    font-family: 'Futura', sans-serif;
+    font-weight: 200;
   }
   
   /*HAMBURGER MENU*/
@@ -615,10 +618,11 @@ video {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  font-family: 'Futura', sans-serif;
 }
 
 .category {
-  background-color: #ffb41f; /* Choose a background color for the categories */
+  background-color: #ffc653; /* Choose a background color for the categories */
   color: #fff; /* Choose text color for the categories */
   padding: 10px 20px;
   margin: 0 10px;
@@ -629,7 +633,7 @@ video {
 }
 
 .category:hover {
-  background-color: #fc4e34; /* Choose a different background color on hover */
+  background-color: #fc4e34; /* different background color on hover */
   color: #000
 }
 
@@ -641,7 +645,8 @@ video {
   align-items: center;
   background-color: rgb(250, 171, 110);
   padding: 15px;
-  color: rgb(47, 47, 47); /* Text color, adjust as needed */
+  color: rgb(47, 47, 47); /* Text color*/
+  font-family: 'Futura', sans-serif;
 }
 
 .contact, .socials {
@@ -649,5 +654,5 @@ video {
 }
 
 .socials a {
-  margin-right: 10px; /* Adjust the spacing between social icons */
+  margin-right: 10px; /* spacing between social icons */
 }
