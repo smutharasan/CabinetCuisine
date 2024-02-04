@@ -37,10 +37,35 @@ const Dashboard = () => {
     },
   ];
 
+  const foodCategories = ['Italian', 'Mexican', 'Asian', 'Desserts'];
+
   return (
     <div className="dashboard">
+      <div className="logo-container">
+        Welcome to
+    <img src="https://github.com/smutharasan/PantryPal/blob/main/src/Untitled_Artwork.png?raw=true" alt="Logo" className="logo" />
+  </div>
+  <div className="food-categories">
+          {foodCategories.map((category, index) => (
+            <div key={index} className="category">
+              {category}
+            </div>
+          ))}
+        </div>
+      <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#">Home</a></li>
+      <li><a class="menu__item" href="#">About</a></li>
+      <li><a class="menu__item" href="#">Recipes</a></li>
+      <li><a class="menu__item" href="#">Contact</a></li>
+    </ul>
+  </div>
       <header className="header">
-        <h1>Welcome to PantryPal</h1>
         {/* Add navigation or other header components */}
       </header>
       <section className="recipe-list">
