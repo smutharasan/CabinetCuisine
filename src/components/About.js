@@ -6,8 +6,8 @@ import Footer from "./Footer";
 const TeamMember = ({ name, role, bio }) => (
   <div className="team-member">
     <h3 style={{ fontWeight: 'bold', fontSize: '1.5em', marginBottom: '0.3em' }}>{name}</h3>
-    <p style={{ fontSize: '1.2em', fontWeight: 'bold', marginBottom: '0.3em' }}>{role}</p>
-    <p style={{ fontSize: '1.1em', fontFamily: 'Arial, sans-serif', marginBottom: '1em' }}>{bio}</p>
+    <p style={{ fontSize: '1.3em', fontWeight: 'bold', marginBottom: '0.3em' }}>{role}</p>
+    <p style={{ fontSize: '1.2em', fontFamily: 'Arial, sans-serif', marginBottom: '1em' }}>{bio}</p>
   </div>
 );
 
