@@ -3,6 +3,7 @@
 import React from "react";
 import Footer from "./Footer";
 
+// TeamMember component displays information about a team member
 const TeamMember = ({ name, role, bio }) => (
   <div className="team-member">
     <h3 style={{ fontWeight: 'bold', fontSize: '1.5em', marginBottom: '0.3em' }}>{name}</h3>
@@ -11,11 +12,14 @@ const TeamMember = ({ name, role, bio }) => (
   </div>
 );
 
+// About component represents the About Us page
 const About = () => (
   <div className="about-container">
     <header style={{ marginBottom: '20px' }}>
       <h1 style={{ fontSize: '3.0em', fontWeight: 'bold' }}>About Us</h1>
     </header>
+    {/* Display information for each team member using TeamMember component */}
+    {/* Each TeamMember component takes name, role, and bio as props */}
     <div className="team-container">
       <TeamMember
         name="Rabia Chattha"
