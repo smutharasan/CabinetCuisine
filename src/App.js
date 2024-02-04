@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import About from "./components/About"; // Import your new component
-import Search from "./components/Search"; // Import your new component
+
 import Searched from "./components/Searched";
 import Dashboard from "./components/Dashboard";
 import ScrambledEggsRecipe from "./components/ScrambledEggsRecipe";
