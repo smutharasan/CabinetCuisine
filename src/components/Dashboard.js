@@ -172,7 +172,7 @@ const foodCategoriesLine2 = [
   <ul class="menu__box">
     <li><Link class="menu__item" to="/">Home</Link></li>
     <li><Link class="menu__item" to="/recipes">Recipes</Link></li>
-    <li><Link class="menu__item" to="/contact">Contact</Link></li>
+    <li><Link class="menu__item" to="/about">About</Link></li>
   </ul>
 </div>
 
