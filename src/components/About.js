@@ -2,8 +2,6 @@
 import React from "react";
 import Footer from "./Footer";
 
-
-
 const TeamMember = ({ name, role, bio }) => (
   <div className="team-member">
       <h2>{name}</h2>
