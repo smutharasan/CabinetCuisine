@@ -1,4 +1,3 @@
-
 // ScrambledEggsRecipe.js
 import React from 'react';
 

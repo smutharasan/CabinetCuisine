@@ -26,7 +26,8 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_VICTORIOUS_FOREST_0287DBC10 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           REACT_APP_CHATGPT_SECRET_KEY: ${{ secrets.CHATGPTKEY }}
-          TEST: $ {{ secrets.TEST }}
+          TEST: ${{ secrets.TEST }}
+          REACT_APP_FOOD_API_KEY: ${{ secrets.REACT_APP_FOOD_API_KEY }}
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
@@ -36,8 +37,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           REACT_APP_CHATGPT_SECRET_KEY: ${{ secrets.CHATGPTKEY }}
-          TEST: ${{ secrets.TEST }}
-          REACT_APP_FOOD_API_KEY: $ {{ secrets.REACT_APP_FOOD_API_KEY }}
+          REACT_APP_FOOD_API_KEY: ${{ secrets.REACT_APP_FOOD_API_KEY }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
